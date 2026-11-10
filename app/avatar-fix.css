@@ -1,0 +1,2 @@
+.avatar img{inset:0!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:cover!important;object-position:center!important;animation:fadeFrame .55s ease}
+@keyframes fadeFrame{from{opacity:.35;filter:blur(4px)}to{opacity:1;filter:blur(0) contrast(1.04) saturate(.82)}}

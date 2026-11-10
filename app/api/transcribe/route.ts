@@ -1,0 +1,2 @@
+import { NextResponse } from "next/server";
+export async function POST(req:Request){const type=req.headers.get("content-type")||"";if(!type.includes("multipart/form-data"))return NextResponse.json({error:"multipart/form-data required"},{status:415});return NextResponse.json({error:"Server transcription requires OPENAI_API_KEY. Browser speech recognition is active in demo mode.",demo:true},{status:501})}
